@@ -53,5 +53,5 @@ if (questionFive === 'y' || questionFive === 'yes'){
 } else{
   alert('Answer yes or no.');
 }
-
+w
 alert(`Thanks for playing my game ${visitor}!  Continue on to learn more about me!`);
