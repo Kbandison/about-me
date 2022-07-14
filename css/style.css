@@ -8,3 +8,9 @@ h2{
 p{
   font-family: sans-serif;
 }
+ol{
+  font-family: sans-serif;
+  bottom: 0px;
+  position: absolute;
+
+}
