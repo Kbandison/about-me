@@ -19,7 +19,7 @@ let questionTwo = prompt('Am I an Army Veteran?').toLowerCase();
 if (questionTwo === 'y' || questionTwo === 'yes'){
   alert('You are wrong!  I am a Navy Veteran.');
 } else if(questionTwo === 'n' || questionTwo ==='no'){
-  alert('You are right!! I\'m actually a Navy Veteran!');
+  alert(`You are right ${visitor} !! I\'m actually a Navy Veteran!`);
 } else{
   alert('Answer yes or no.');
 }
@@ -52,6 +52,18 @@ if (questionFive === 'y' || questionFive === 'yes'){
   alert('You are wrong!! Kinda, as I technically work in the warehouse section of Best Buy.  If I become a web developer, that\'s the first place I would look for employment.');
 } else{
   alert('Answer yes or no.');
+}
+
+let questionSix = prompt('How old am I?');
+
+for(let i = 1; i < 4; i++){
+  if (questionSix === 31){
+    questionSix = prompt('Correct!');
+    break;
+  }else if (questionSix < 31){
+    questionSix = prompt('Too Low!');
+  }else if (questionSix > 31)
+    questionSix = prompt('Too High!');
 }
 
 alert(`Thanks for playing my game ${visitor}!  Continue on to learn more about me!`);
