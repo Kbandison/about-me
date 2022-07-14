@@ -67,8 +67,9 @@ for(let i = 1; i < 4; i++){
 
 alert('Correct!! I was born in May of 1991. ');
 
+// Adding a function to your seventh question. 
+function seventhQuestion(){
 let port = ['Greece', 'Bahrain', 'Dubai'];
-
 let correctAnswer = port[0].toUpperCase();
 let correctAnswer2 = port[1].toUpperCase();
 let correctAnswer3 = port[2].toUpperCase();
@@ -86,4 +87,7 @@ for(let i = 0; i < 5; i++){
     userGuess = prompt('Wrong.  Try again!\n Marseille\n Portugal\n  Greece\n  Bahrain\n  Dubai\n  Naples\n  Yokosuka\n').toUpperCase();
   }
 }
+}
+
+seventhQuestion();
 alert(`Thanks for playing my game ${visitor}!  Continue on to learn more about me!`);
