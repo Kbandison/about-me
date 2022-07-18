@@ -61,18 +61,20 @@ if (questionFive === 'y' || questionFive === 'yes'){
   alert('Answer yes or no.');
 }
 
-let questionSix = prompt('How old am I?');
+let age = 31;
+let questionSix = +prompt('How old am I?');
 
-for(let i = 1; i < 4; i++){
-  if(questionSix == 31){
+for(let i = 1; i < 5; i++){
+  if(questionSix === age){
     questionSix = alert('Correct! My birthday is in May 1991!');
     score++;
     break;
-  }else if(questionSix < 31){
+  }else if(questionSix < age){
     questionSix = prompt('Too Low!');
-  }else if(questionSix > 31){
+  }else if(questionSix > age){
     questionSix = prompt('Too High!');
   }
+
   if(i === 4){
     alert('The answer is 31!');
   }
@@ -80,7 +82,7 @@ for(let i = 1; i < 4; i++){
 let port = ['Greece', 'Bahrain', 'Dubai'];
 
 for(let i = 0; i < 6; i++){
-  let questionSeven = prompt('What is one of my favorite ports to visit on deployment?').toLowerCase();
+  let questionSeven = prompt('What is of my favorite country to visit on deployment?').toLowerCase();
 
   for(let j = 0; j < port.length; j++){
     if(questionSeven === port[j]){
@@ -92,7 +94,7 @@ for(let i = 0; i < 6; i++){
   }
 }
 
-alert(" All possible answers could be: Greece, Bahrain, or Dubai.  They were amazing places.");
+alert("All possible answers could be: Greece, Bahrain, or Dubai.  They were amazing places.");
 
 alert(`Your score is ${score} out of 7.`);
 
