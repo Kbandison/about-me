@@ -81,10 +81,10 @@ for(let i = 1; i < 5; i++){
 }
 
 function questionSeven(){
-  let port = ['Greece', 'Bahrain', 'Dubai'];
+  let port = ['greece', 'bahrain', 'dubai'];
 
   for(let i = 0; i < 6; i++){
-    let questionSeven = Object.assign(prompt)('What is of my favorite country to visit on deployment?').toLowerCase();
+    let questionSeven = prompt('What is of my favorite country to visit on deployment?').toLowerCase();
 
     for(let j = 0; j < port.length; j++){
       if(questionSeven === port[j]){
@@ -94,7 +94,6 @@ function questionSeven(){
         break;
       }
     }
-    alert('Guess again!');
   }
 }
 questionSeven();
