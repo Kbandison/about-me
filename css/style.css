@@ -1,16 +1,31 @@
 h1{
   font-size: 3vw;
   font-family:fantasy;
+  padding: 20px;
+  color: purple;
 }
 h2{
   font-size: 2vw;
+  color: grey;
 }
 p{
   font-family: sans-serif;
+  border: solid grey;
+  font-size: 1.2vw;
+  color:white;
+  margin: 20px 0px;
 }
 ol{
   font-family: sans-serif;
-  bottom: 0px;
-  position: absolute;
-
+  position: relative;
+  color: white;
+  font-size: 1.2vw;
+  border: solid grey;
+}
+body{
+  background: radial-gradient(purple, black);
+}
+main{
+  padding: 20px;
+  margin: 50px 200px;
 }
