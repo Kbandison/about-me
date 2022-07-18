@@ -39,7 +39,7 @@ if (questionThree === 'y' || questionThree === 'yes'){
   alert('Answer yes or no.');
 }
 
-let questionFour = prompt('Do I currently live i the states?').toLowerCase();
+let questionFour = prompt('Do I currently live in the states?').toLowerCase();
 
 if (questionFour === 'y' || questionFour === 'yes'){
   alert('You are correct! I live in the Atlanta area. ');
@@ -79,23 +79,28 @@ for(let i = 1; i < 5; i++){
     alert('The answer is 31!');
   }
 }
-let port = ['Greece', 'Bahrain', 'Dubai'];
 
-for(let i = 0; i < 6; i++){
-  let questionSeven = prompt('What is of my favorite country to visit on deployment?').toLowerCase();
+function questionSeven(){
+  let port = ['Greece', 'Bahrain', 'Dubai'];
 
-  for(let j = 0; j < port.length; j++){
-    if(questionSeven === port[j]){
-      alert('Yes!  That is my favorite port!');
-      score++;
-      i = 6;
-      break;
+  for(let i = 0; i < 6; i++){
+    let questionSeven = Object.assign(prompt)('What is of my favorite country to visit on deployment?').toLowerCase();
+
+    for(let j = 0; j < port.length; j++){
+      if(questionSeven === port[j]){
+        alert('Yes!  That is my favorite port!');
+        score++;
+        i = 6;
+        break;
+      }
     }
+    alert('Guess again!');
   }
 }
+questionSeven();
 
 alert("All possible answers could be: Greece, Bahrain, or Dubai.  They were amazing places.");
 
 alert(`Your score is ${score} out of 7.`);
 
-alert(`Thanks for playing my game ${visitor}!  Continue on to learn more about me!`);
+alert(`Thanks for playing my game ${visitor}! Continue on to learn more about me!`);
